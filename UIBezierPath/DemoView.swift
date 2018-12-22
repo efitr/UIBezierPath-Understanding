@@ -18,4 +18,17 @@ class DemoView: UIView {
     }
     */
 
+    
+    var path: UIBezierPath!
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        self.backgroundColor = UIColor.darkGray
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
 }
