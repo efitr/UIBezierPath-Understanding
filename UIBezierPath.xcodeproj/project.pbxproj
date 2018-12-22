@@ -13,6 +13,7 @@
 		EC8E405F21CDD66100FEA9D4 /* UIBezierPath.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC8E405D21CDD66100FEA9D4 /* UIBezierPath.xcdatamodeld */; };
 		EC8E406121CDD66700FEA9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8E406021CDD66700FEA9D4 /* Assets.xcassets */; };
 		EC8E406421CDD66700FEA9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8E406221CDD66700FEA9D4 /* LaunchScreen.storyboard */; };
+		EC8E406C21CDE70300FEA9D4 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E406B21CDE70300FEA9D4 /* DemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EC8E406021CDD66700FEA9D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC8E406321CDD66700FEA9D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8E406521CDD66700FEA9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8E406B21CDE70300FEA9D4 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8E405621CDD66100FEA9D4 /* AppDelegate.swift */,
+				EC8E406B21CDE70300FEA9D4 /* DemoView.swift */,
 				EC8E405821CDD66100FEA9D4 /* ViewController.swift */,
 				EC8E405A21CDD66100FEA9D4 /* Main.storyboard */,
 				EC8E406021CDD66700FEA9D4 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC8E405F21CDD66100FEA9D4 /* UIBezierPath.xcdatamodeld in Sources */,
+				EC8E406C21CDE70300FEA9D4 /* DemoView.swift in Sources */,
 				EC8E405921CDD66100FEA9D4 /* ViewController.swift in Sources */,
 				EC8E405721CDD66100FEA9D4 /* AppDelegate.swift in Sources */,
 			);
