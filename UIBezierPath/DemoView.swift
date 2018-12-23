@@ -19,7 +19,18 @@ class DemoView: UIView {
         //self.createRectangle()
         //self.createTriangle()
         
-        self.path = UIBezierPath(ovalIn: self.bounds)
+//        self.path = UIBezierPath(ovalIn: self.bounds)
+        
+//        self.path = UIBezierPath(ovalIn: CGRect(x: self.frame.size.width/2 - self.frame.size.height/2,
+//                                                y: 0.0,
+//                                                width: self.frame.size.height,
+//                                                height: self.frame.size.height))
+        
+//        path = UIBezierPath(roundedRect: self.bounds, cornerRadius: 15.0)
+        
+        path = UIBezierPath(roundedRect: self.bounds,
+                            byRoundingCorners: [.topLeft, .bottomRight],
+                            cornerRadii: CGSize(width: 15.0, height: 0.0))
         
         // Specify the fill color and apply it to the path.
         UIColor.orange.setFill()
