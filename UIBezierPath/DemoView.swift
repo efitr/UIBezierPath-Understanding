@@ -16,7 +16,10 @@ class DemoView: UIView {
 
     override func draw(_ rect: CGRect) {
         // Drawing code
-        self.createRectangle()
+        //self.createRectangle()
+        //self.createTriangle()
+        
+        self.path = UIBezierPath(ovalIn: self.bounds)
         
         // Specify the fill color and apply it to the path.
         UIColor.orange.setFill()
