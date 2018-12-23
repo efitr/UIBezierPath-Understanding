@@ -10,17 +10,23 @@ import UIKit
 
 class DemoView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
     
     var path: UIBezierPath!
     
+
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+        self.createRectangle()
+        
+        // Specify the fill color and apply it to the path.
+        UIColor.orange.setFill()
+        path.fill()
+        
+        // Specify a border (stroke) color.
+        UIColor.purple.setStroke()
+        path.stroke()
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -31,7 +37,7 @@ class DemoView: UIView {
         super.init(coder: aDecoder)
     }
     
-    func createRectangule() {
+    func createRectangle() {
         path = UIBezierPath()
         
         // Specify the point that the path should start get drawn.
@@ -47,6 +53,14 @@ class DemoView: UIView {
         path.addLine(to: CGPoint(x: self.frame.size.width, y: 0.0))
         
         // Close the path. This will create the last line automatically.
+        path.close()
+    }
+    
+    func createTriangle() {
+        path = UIBezierPath()
+        path.move(to: CGPoint(x: self.frame.width/2, y: 0.0))
+        path.addLine(to: CGPoint(x: 0.0, y: self.frame.size.height))
+        path.addLine(to: CGPoint(x: self.frame.size.width, y: self.frame.size.height))
         path.close()
     }
 
