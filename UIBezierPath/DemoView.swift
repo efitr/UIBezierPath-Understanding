@@ -28,9 +28,22 @@ class DemoView: UIView {
         
 //        path = UIBezierPath(roundedRect: self.bounds, cornerRadius: 15.0)
         
-        path = UIBezierPath(roundedRect: self.bounds,
-                            byRoundingCorners: [.topLeft, .bottomRight],
-                            cornerRadii: CGSize(width: 15.0, height: 0.0))
+//        path = UIBezierPath(roundedRect: self.bounds,
+//                            byRoundingCorners: [.topLeft, .bottomRight],
+//                            cornerRadii: CGSize(width: 15.0, height: 0.0))
+//
+
+//        path = UIBezierPath(arcCenter: CGPoint(x: self.frame.size.width/2, y: self.frame.size.height/2),
+//                            radius: self.frame.size.height/2,
+//                            startAngle: CGFloat(80.0),
+//                            endAngle: CGFloat(180.0),
+//                            clockwise: true)
+        
+        path = UIBezierPath(arcCenter: CGPoint(x: self.frame.size.width/2, y: self.frame.size.height/2),
+                            radius: self.frame.size.height/2,
+                            startAngle: CGFloat(240.0),
+                            endAngle: CGFloat(15.0),
+                            clockwise: false)
         
         // Specify the fill color and apply it to the path.
         UIColor.orange.setFill()
